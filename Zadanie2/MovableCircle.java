@@ -1,4 +1,4 @@
-public class MovableCircle implements Movable {
+public class MovableCircle extends MovablePoint implements Movable  {
     public int x;
     public int y;
     public int xSpeed;
@@ -6,11 +6,11 @@ public class MovableCircle implements Movable {
     private int radius;
     private MovablePoint center;
     MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
-        x = 1;
-        y = 1;
-        xSpeed = 1;
-        ySpeed = 1;
-        radius = 1;
+        this.x = x;
+        this.y = y;
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+        this.radius = radius;
     }
     @Override
     public String toString() {
